@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "azure-pipelines-task-lib": "^2.9.3",
+    "httpclient": "^0.1.0",
+    "request": "^2.88.0",
     "require": "^2.4.20",
     "tsc": "^1.20150623.0",
     "tsc-init": "^2.1.0",

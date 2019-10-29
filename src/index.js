@@ -13,12 +13,28 @@ const tl = require("azure-pipelines-task-lib/task");
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const inputString = tl.getInput('samplestring', true);
-            if (inputString == 'bad') {
-                tl.setResult(tl.TaskResult.Failed, 'Bad input was given');
-                return;
-            }
-            console.log('Hello', inputString);
+            const app_key = tl.getInput('a', true);
+            const access_key = tl.getInput('b', true);
+            var request = require("request");
+            var requestData = {
+                "access_token": access_key,
+                "application_token": app_key
+            };
+            // var api = "https://api.beaglesecurity.com/v1/test/start";
+            var api = "https://beagle-tvm-api.appfabs.com/v1/test/start";
+            request({
+                url: api,
+                method: "POST",
+                json: requestData
+            }, function (error, response, body) {
+                if (!error && response.statusCode === 200) {
+                    console.log(body);
+                }
+                else {
+                    console.log("response.statusCode: " + response.statusCode);
+                    console.log("response.statusText: " + response.statusText);
+                }
+            });
         }
         catch (err) {
             tl.setResult(tl.TaskResult.Failed, err.message);
