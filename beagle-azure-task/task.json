@@ -16,7 +16,7 @@
         {
             "name": "accesskey",
             "type": "string",
-            "label": "Access Key",           
+            "label": "Access Token",           
             "defaultValue": "",
             "required": true,
             "helpMarkDown": "Your Secret Beagle Access Token"
@@ -24,7 +24,7 @@
         {
             "name": "applicationkey",
             "type": "string",
-            "label": "Application Key",          
+            "label": "Application Token",          
             "defaultValue": "",
             "required": true,
             "helpMarkDown": "Your Application Token"
