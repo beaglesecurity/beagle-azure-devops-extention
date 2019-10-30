@@ -26,20 +26,20 @@ In short, Beagle finds out how deep your system can be penetrated. Know it befor
 
 ## Adding Beagle-Azure-Task to your Project
 
-1. Goto Azure DevOps
-2. Browse Marketplace and search for `Beagle-Security-Task` and install it. 
-1. Open your Project.
+1. Open your Azure DevOps Project.
 2. You can configure Beagle test in your release pipeline or build pipeline.
 3. For Release Pipeline.
-  * Navigate to `Pipelines` -> `Releases`.
-  * Create (or edit existing pipline) a pipleline and `Add a task`.
-  * Search for `Beagle Security Test` and click `Add`.
-4. For Build Pipeline.
-  * Navigate to `Pipelines` -> `Builds`.
-  * Create (or edit an existing pipeline) a pipeline and `Add a task`.
-  * Search in Tasks for `Beagle Security Test`.
-5. Provide the Application Key and Access Key which is generated from your Beagle dashboard.
-7. Now while your build or release pipeline is triggered your beagle security test will run.
+    ![Release Pipeline](https://beagle-web.s3.amazonaws.com/assets/share/release.png)
+    * Navigate to `Pipelines` -> `Releases`.
+    * Create (or edit existing pipline) a pipleline and `Add a task`.
+    * Search for `Beagle Security Test` and click `Add`.
+4. For any Build/Pipeline.
+    ![Build/Pipe Pipeline](https://beagle-web.s3.amazonaws.com/assets/share/release.png)
+    * Navigate to `Pipelines` -> `Pipelines/Builds`.
+    * Create (or edit an existing pipeline) a pipeline and `Add a task`.
+    * Search in Tasks for `Beagle Security Test`.
+5. Provide the Application Token and Access Token which is generated from your Beagle dashboard.
+6. Now while your build or release pipeline is triggered your beagle security test will run.
 
 # Authors
 

@@ -2,8 +2,14 @@
     "manifestVersion": 1,
     "id": "BeagleSecurity",
     "name": "Beagle-Security-Task",
-    "version": "0.1.3",
+    "version": "1.0.1",
     "publisher": "BeagleSecurity",
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "public": true,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
