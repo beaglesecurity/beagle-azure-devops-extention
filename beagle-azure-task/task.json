@@ -5,27 +5,35 @@
     "friendlyName": "Beagle Security Test",
     "description": "Trigger beagle security test",
     "helpMarkDown": "",
-    "category": "Utility",
+    "category": "Test",
     "author": "Beagle",
     "version": {
         "Major": 0,
         "Minor": 1,
         "Patch": 0
     },
-    "instanceNameFormat": "Echo $(samplestring)",
     "inputs": [
         {
-            "name": "samplestring",
+            "name": "accesskey",
             "type": "string",
-            "label": "Sample String",
+            "label": "Access Key",           
             "defaultValue": "",
             "required": true,
-            "helpMarkDown": "A sample string"
+            "helpMarkDown": "Your Secret Beagle Access Token"
+        },
+        {
+            "name": "applicationkey",
+            "type": "string",
+            "label": "Application Key",          
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Your Application Token"
         }
     ],
+    "instanceNameFormat": "Trigger Beagle Security Test",
     "execution": {
         "Node10": {
-            "target": "index.js"
+            "target": "src/index.js"
         }
     }
 }

@@ -2,8 +2,8 @@ import tl = require('azure-pipelines-task-lib/task');
 
 async function run() {
     try {
-        const app_key: string | undefined = tl.getInput('application_key', true);
-        const access_key: string | undefined = tl.getInput('access_key', true);
+        const app_key: string | undefined = tl.getInput('applicationkey', true);
+        const access_key: string | undefined = tl.getInput('accesskey', true);
         var request = require("request")
         var requestData = {
             "access_token": access_key,

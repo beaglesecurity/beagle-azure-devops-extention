@@ -1,25 +1,15 @@
 {
-  "name": "beagle-azure-task",
+  "name": "beagle-azure-devops",
   "version": "1.0.0",
-  "description": "",
+  "description": "To trigger Beagle penetration testing from Azure DevOps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build beagle-azure-task/tsconfig.json && tfx extension create --manifest-globs vss-extension.json"
   },
   "author": "beagle",
   "license": "ISC",
-  "dependencies": {
-    "azure-pipelines-task-lib": "^2.9.3",
-    "httpclient": "^0.1.0",
-    "request": "^2.88.0",
-    "require": "^2.4.20",
-    "tsc": "^1.20150623.0",
-    "tsc-init": "^2.1.0",
-    "vss-web-extension-sdk": "^5.141.0"
-  },
   "devDependencies": {
-    "@types/node": "^12.11.7",
-    "@types/q": "^1.5.2",
-    "typescript": "^3.6.4"
+    "tfx-cli": "^0.7.9"
   }
 }
