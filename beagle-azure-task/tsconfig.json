@@ -64,9 +64,6 @@
       "src/*"
   ],
   "exclude": [
-      "node_modules",
-      "**/*.spec.ts"
-  ],"files":[
-    "./src/index.ts"
+      "node_modules"
   ]
 }
