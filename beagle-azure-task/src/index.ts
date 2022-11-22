@@ -19,7 +19,6 @@ async function run() {
             }
         }, 
         function (error: string, response: { statusCode: string | number; statusText: string; }, body: any) {
-            console.log(response)
             if (!error && response.statusCode === 200) {
                 console.log(body)
             }
