@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "BeagleSecurity",
     "name": "Beagle-Security-Task",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "publisher": "BeagleSecurity",
     "content": {
         "details": {
