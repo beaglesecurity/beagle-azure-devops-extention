@@ -3,8 +3,8 @@ import tl = require('azure-pipelines-task-lib/task');
 
 async function run() {
     try {
-        const app_key: string | undefined = tl.getInput('applicationToken', true);
-        const access_key: string | undefined = tl.getInput('Authorization', true);
+        const app_key: string | undefined = tl.getInput('applicationkey', true);
+        const access_key: string | undefined = tl.getInput('accesskey', true);
         var request = require("request");
         var requestData = {
             "applicationToken": app_key
@@ -23,8 +23,7 @@ async function run() {
                 console.log(body)
             }
             else {
-                console.log("response.statusCode: " + response.statusCode)
-                console.log("response.statusText: " + response.statusText)
+                console.log(body)
             }
         });
     }
