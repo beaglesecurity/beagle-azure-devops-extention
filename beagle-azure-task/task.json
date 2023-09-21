@@ -33,7 +33,7 @@
     "instanceNameFormat": "Trigger Beagle Security Test",
     "execution": {
         "Node10": {
-            "target": "src/index.js"
+            "target": "src/index.ts"
         }
     }
 }

@@ -4,7 +4,7 @@
   "description": "To trigger Beagle penetration testing from Azure DevOps",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'beagle-azure-task/src/index.js'",
+    "test": "mocha 'beagle-azure-task/src/index.ts'",
     "build": "tsc --build beagle-azure-task/tsconfig.json && tfx extension create --manifest-globs vss-extension.json"
   },
   "author": "beagle",
